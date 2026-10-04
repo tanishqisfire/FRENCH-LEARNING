@@ -1,8 +1,8 @@
-const btn = document.getElementById("generateBtn");
+const generatebtn = document.getElementById("generateBtn");
 const box = document.getElementById("textBox");
 
 
-btn.addEventListener("click", async () => {
+generatebtn.addEventListener("click", async () => {
     box.textContent = "Generating...";
     try {
         const res = await fetch("/generate");
@@ -14,3 +14,13 @@ btn.addEventListener("click", async () => {
         box.textContent = "Error: " + err;
     }
 })
+
+
+const speakbtn = document.getElementById("speakBtn");
+
+speakbtn.addEventListener("click", async () => {
+    const text = box.textContent;
+    const audio = new Audio("/speak?text=" + encodeURIComponent(text));
+
+    audio.play()
+});
