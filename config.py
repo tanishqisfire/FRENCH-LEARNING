@@ -1,6 +1,6 @@
 modelName = "llama3.1:8b"
 level = "A1"
-topic = "everyday life"
+topic = "everyday life/school/work/ai/family/girls"
 
 systemPrompt = ( "You are a French teacher. You write short, natural spoken French "
     "for pronunciation practice. Reply with only the French sentence, "

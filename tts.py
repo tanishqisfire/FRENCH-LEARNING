@@ -1,6 +1,6 @@
 import subprocess
 import sys
-import app
+
 
 
 def text_to_speech(text, output_path="output.wav", voice="fr_FR-siwis-medium"):
