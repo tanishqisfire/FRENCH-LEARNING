@@ -8,5 +8,5 @@ systemPrompt = ( "You are a French teacher. You write short, natural spoken Fren
 
 userPrompt = (
     "Write one random sentence in French at CEFR level {level} about the topic: "
-    "{topic}. Maximum 15 words."
+    "{topic}. Maximum 15 words and keep it very easy and simple"
 )
