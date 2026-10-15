@@ -1,4 +1,4 @@
-
+from improve import same_group, LIAISON_SOUNDS
 
 def build_grid(ref, heard):
     rows = len(ref) + 1
@@ -13,7 +13,7 @@ def build_grid(ref, heard):
 
     for i in range(1, rows):
         for j in range(1, cols):
-            if ref[i - 1] == heard[j-1]:
+            if same_group(ref[i - 1], heard[j - 1]):
                 sub_cost = 0
             else:
                 sub_cost = 1
@@ -34,7 +34,7 @@ def trace_back(ref, heard, grid):
 
     while i > 0 or j > 0:
         if i > 0 and j > 0:
-            if ref[i - 1] == heard[j - 1]:
+            if same_group(ref[i - 1], heard[j - 1]):
                 sub_cost = 0
             else:
                 sub_cost = 1
@@ -60,7 +60,7 @@ def trace_back(ref, heard, grid):
     return steps
 
 
-def summarize_words(steps, word_ids, word_count):
+def summarize_words(steps, ref,  word_ids, word_count):
     problems = [[] for _ in range(word_count)]
     last_ref = 0
 
@@ -69,6 +69,9 @@ def summarize_words(steps, word_ids, word_count):
             last_ref = ref_pos
         if label == "match":
             continue
+        if label == "deletion" and ref[ref_pos] in LIAISON_SOUNDS:
+            if ref_pos + 1 == len(word_ids) or word_ids[ref_pos + 1] != word_ids[ref_pos]:
+                continue
         problems[word_ids[last_ref]].append((label, ref_pos, heard_pos))
 
 

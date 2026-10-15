@@ -9,7 +9,7 @@ def check_pronounciation(sentence, audio_path):
     heard = hear_phonemes(audio_path)
     grid = build_grid(ref, heard)
     steps = trace_back(ref, heard, grid)
-    problems = summarize_words(steps, word_ids, len(words))
+    problems = summarize_words(steps, ref, word_ids, len(words))
 
     results = []
 

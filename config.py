@@ -4,7 +4,8 @@ topic = "everyday life/school/work/ai/family/girls"
 
 systemPrompt = ( "You are a French teacher. You write short, natural spoken French "
     "for pronunciation practice. Reply with only the French sentence, "
-    "no translation, no quotes, no explanation.")
+    "no translation, no quotes, no explanation."
+    "none at all very important")
 
 userPrompt = (
     "Write one random sentence in French at CEFR level {level} about the topic: "
