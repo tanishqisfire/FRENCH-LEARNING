@@ -1,0 +1,8 @@
+.venv-1/
+__pycache__/
+recording.wav
+output.wav
+*.onnx
+*.onnx.json
+.DS_Store
+scratch.py 
