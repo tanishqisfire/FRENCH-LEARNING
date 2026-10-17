@@ -6,7 +6,7 @@ This is a website which uses flask to run python and javascript both, its main p
 To Run the project,
 =
  - run, python3 app.py (running it the first time will take time as it will download the wav2vec2 speech-to-phoneme model  in listen.py)
-
+ - (it has only been tested on macos, it technically should run on windows/linux but idk)
 Requirements,
 =
 - Download imports from requirements.txt
