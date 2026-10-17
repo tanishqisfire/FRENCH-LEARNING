@@ -2,7 +2,5 @@
 __pycache__/
 recording.wav
 output.wav
-*.onnx
-*.onnx.json
 .DS_Store
 scratch.py 

@@ -5,6 +5,7 @@ const resultBox = document.getElementById("resultBox");
 
 generatebtn.addEventListener("click", async () => {
     box.textContent = "Generating...";
+    resultBox.textContent = "";
     try {
         const res = await fetch("/generate");
         const data = await res.json();

@@ -1,10 +1,59 @@
 #textBox {
     border:1px solid #888;
-     padding:12px; 
-     margin-top:12px;
-      min-height:40px;
+     padding:28px 56px; 
+     margin:12px auto 0;
+      min-height:90px;
+      width: 85%;
+      max-width: 800px;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      color: #222;
 }
 
-.word-ok { color: green; }
-.word-bad { color: red; font-weight: bold;}
-#resultBox {margin-top: 12px; font-size: 20px; }
+.word-ok {
+     color: #2e7d32;
+     }
+.word-bad { 
+     color: #c62828;;
+     font-weight: bold;
+     text-decoration: underline;
+    }
+#resultBox {
+    margin: 28px auto 0;
+    width: 85%;
+    max-width: 800px;
+    min-height: 40px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+ }
+
+
+
+#buttonRow {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+
+}
+button {
+    font-size: 18px;
+    padding: 12px 32px;
+    min-width: 130px;
+    border: 1px solid #888;
+    border-radius: 9999px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
