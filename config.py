@@ -5,7 +5,7 @@ serverUrl = "https://ai.hackclub.com/proxy/v1"
 
 apiKey = os.environ.get("LLM_API_KEY")
 level = "A1"
-topic = "everyday life/school/work/ai/family/complementing someone/ complementing something"
+topic = "everyday life/school/work/ai/family/complementing"
 
 systemPrompt = ( "You are a French teacher. You write short, natural spoken French "
     "for pronunciation practice. Reply with only the French sentence, "
