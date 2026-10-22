@@ -9,7 +9,11 @@ generatebtn.addEventListener("click", async () => {
     try {
         const res = await fetch("/generate");
         const data = await res.json();
-
+        
+        if (data.error) {
+            box.textContent = data.error;
+            return;
+        }
         box.textContent = data.text;
     
     } catch(err) {

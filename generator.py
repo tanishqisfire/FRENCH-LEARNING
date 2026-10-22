@@ -1,17 +1,20 @@
-import ollama
+from openrouter import OpenRouter
 import config
 
-
+client = OpenRouter(
+    api_key = config.apiKey,
+    server_url = config.serverUrl
+)
 def generate_sentence():
-    response = ollama.chat(model = config.modelName, messages = [ {"role": "system", "content": config.systemPrompt},
+    response = client.chat.send(model = config.modelName, messages = [ {"role": "system", "content": config.systemPrompt},
                                                                   {"role": "user", "content": config.userPrompt.format(level = config.level, topic=config.topic)},
     ] ,
     
-    options = {"temperature": 1.0},
+    temperature = 1.0,
     )
     
-
-    return response["message"]["content"].strip()
+    text = response.choices[0].message.content
+    return (text or "").strip().strip('"')
 
 
 

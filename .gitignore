@@ -4,3 +4,5 @@ recording.wav
 output.wav
 .DS_Store
 scratch.py 
+.env
+.vscode/

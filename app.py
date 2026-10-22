@@ -16,7 +16,11 @@ def index():
 @app.route("/generate")
 def generate():
     global latest_value
-    latest_value = generator.generate_sentence()
+    try:
+     latest_value = generator.generate_sentence()
+    except Exception as e:
+     print("Generator error:", e)
+     return jsonify({"error": "Could not generate a sentence, try again in a moment."}), 500
     return jsonify({"text": latest_value})
 
 @app.route("/speak")
