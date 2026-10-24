@@ -34,8 +34,12 @@ Now more deeply about the code itself,
 
 - pipeline.py, groups everything together, so index1.js and app.py arent a mess, it calls the original sentence, the reference, the heard, the no of phonemes need to be edited minimal, the listing of them as insertion/de... ,  and it gives ok(true) value when no problem is in a word, which is used in index1.js to color the word as green or red.
 
+- Docker file was added as i was recommended to host the site on hugging face but as of july of 2026 they have made that service paid and i decided not to remove the docker file as it dosent harm ig.
 
-HOW TO RUN IT (will only work in macos silicon chip)
+- frenchpronunciation.command, is the lanucher which is the main way to demo the project.
+
+
+HOW TO RUN IT (will only work in macos silicon chip) (mandatory to run)
 =
 - download the zip file from the repository
 - unzip the file
@@ -46,6 +50,10 @@ HOW TO RUN IT (will only work in macos silicon chip)
 - press y when it asks for confirmation to downloads
 
 - you should be able to enjoy the website locally after download now
+
+HOW TO RUN IT USING API
+=
+- after doing the above required, add a text file in the same folder with the name api_key.txt and type the key's name in it.
 
 What is it?
 =
@@ -60,6 +68,8 @@ What is it?
 INCONSISTENCIES!
 = 
 - it a very real possibilty for this code to flag different accents which are considered to be right pronunciation as wrong pronunciation so beaware it is a fairly inconsistent code which needs more improvement to be helpfull for real students as for the same word many phonemes could be considered as correct in different accent and it only ignores  common incosistencies rather than most of them.(if the word spoken is correct it will usually show it as correct unless audio is intreurpted by external sounds)
+
+- tho if the entire sentence is shown as wrong even if spoken correctly is a very rare case which shouldnt happen as multiple accents were tested and it only caused trouble on specific words and most of the sentences were flagged correct and if it does happen then that may indicate a audio input problem.
 
 AI USED?
 =
