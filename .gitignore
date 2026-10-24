@@ -6,3 +6,5 @@ output.wav
 scratch.py 
 .env
 .vscode/
+api_key.txt
+.setup_done

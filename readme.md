@@ -36,6 +36,7 @@ Now more deeply about the code itself,
 
 Requirements,(for api run)
 =
+- brew install espeak-ng ffmpeg
 - Download imports from requirements.txt
 - You will need your own api key and server url for it.
 - change the server url in the config.py and 
@@ -44,6 +45,7 @@ Requirements,(for api run)
 
 Requirements,(for ollama run)
 =
+- run brew install espeak-ng ffmpeg
 - Download imports from requirements.txt
 - You will need a ollama model running,
 - set your ollama model in the config.py,
