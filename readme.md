@@ -88,6 +88,8 @@ AI has been used in the following ways,
 
 I would like to add even though the above part of the code has been assissted by AI, the idea was original and AI has only either corrected an error ,taught the method or in very specific cases only wrote the codes for the for example levenshtien mentioned explicitly.
 
+Also please do understand that it took me a lot of time to learn new concepts and try to implement them by my own ways like in .command file , which is written by ai but even so took me much time to complete it, as I had to learn the process and specifics methods and commands of a new language, and had to review if each process is needed for my specific case.
+
 
 
 
